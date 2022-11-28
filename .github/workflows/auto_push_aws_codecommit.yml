@@ -1,8 +1,12 @@
-name: Mirroring
+name: Auto Push AWS CodeCommit
 
-#on: [ push, delete ]
-on: [ workflow_dispatch ]
-
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+  delete:
+    
 jobs:
   to_codecommit:
     runs-on: ubuntu-latest

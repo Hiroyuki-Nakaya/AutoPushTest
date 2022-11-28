@@ -3,8 +3,6 @@ name: Auto Push AWS CodeCommit
 on: 
   workflow_dispatch:
   push:
-    branches:
-      - "main"
   delete:
     
 jobs:
@@ -19,4 +17,4 @@ jobs:
           ssh_private_key:
             ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY }}
           ssh_username:
-            ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY_ID }}
+            ${{ secrets.CODECOMMIT_SSH_KEY_ID }}

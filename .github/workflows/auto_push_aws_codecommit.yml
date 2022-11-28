@@ -1,4 +1,4 @@
-name: Auto Push AWS CodeCommit
+name: Auto Push To AWS CodeCommit
 
 on: 
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
   delete:
     
 jobs:
-  to_codecommit:
+  auto_push_to_codecommit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
